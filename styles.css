@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el html y body ocupen toda la altura del viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Permite que el contenido se expanda verticalmente */
+}
+
+.division {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura del viewport */
+    box-sizing: border-box;
+}
+
+.panel-izquierdo {
+    background-color: #e0e0e0; /* Color de fondo uniforme para todo el panel izquierdo */
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.panel-derecho {
+    background-color: #fff;
+    width: 70%; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0; /* Espaciado alrededor del encabezado */
+}
+
+.foto-perfil {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaciado entre los elementos de contacto */
+}
+
+.contacto img {
+    margin-right: 10px; /* Espaciado entre el ícono y el texto */
+}
+
+li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de lista */
+}
+
+/* Justificar el texto en secciones y párrafos */
+section p, section ul, section li, .contacto p {
+    text-align: justify;
+}
+
+/* Opcional: Estilo adicional para secciones dentro del panel izquierdo */
+.panel-izquierdo section {
+    margin-bottom: 20px; /* Espaciado entre secciones dentro del panel izquierdo */
+}
